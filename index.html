@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MAGUEY TOKEN</title>
     <!-- CSS only -->
     <link rel="shortcut icon" href="./images/ico.png" type="image/x-icon">
-    
+        
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css">
+
+
+    <script src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
 </head>
 <body>
 
@@ -25,7 +34,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="#header">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#inversion-recreativa">Inversion creativa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aliados_comerciales">Aliados Comerciales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -45,21 +63,60 @@
 
           <section class="col" id="inversion-recreativa">
             <div class="container">
-              <h2>INVERSIÓN RECREATIVA</h2>
               <div class="text-content-reacreativa">
+              <h2 class="py-4">INVERSIÓN RECREATIVA</h2>
                 <p>
                   Conviertete en el dueño de una plantacion de maguey en el estado de oaxaca.
                 </p>
-                <h3>Hemos sembrado mas de <span class="text-color-yellow">1,200</span> hectáreas</h3>
+                <h3>Hemos sembrado más de <span class="text-color-yellow">1,200</span> hectáreas</h3>
               </div>
+
+              <div class="grid-icons mt-5">
+                <div class="col-grid beneficios-ico">
+                  <img src="./images/legalidad.png" alt="" class="beneficios-img">
+                  <p>Legalidad</p>
+                  <p>Revisión de expediente legal</p>
+                </div>
+
+              <div class="col-grid  beneficios-ico">
+                <img src="./images/mano.png" alt="" class="beneficios-img">
+                <p>Inversion única</p>
+                <p>De $ 370,000.00 a invertirse para 1 hectária</p>
+              </div>
+
+            <div class="col-grid  beneficios-ico">
+              <img src="./images/AGAVEICO.png" alt="" class="beneficios-img">
+              <p>Espadín (5 años)</p>
+              <p>Cuidado fitosanitario, control de plagas y hierba, seguro agricola</p>
             </div>
+
+          <div class="col-grid  beneficios-ico">
+            <img src="./images/espadin.png" alt="" class="beneficios-img">
+            <p>Venta asegurada</p>
+            <p>con productores de mezcal y derivados</p>
+          </div>
+
+          <div class="col-grid  beneficios-ico">
+            <img src="./images/botella.png" alt="" class="beneficios-img">
+            <p>ganancias justas</p>
+            <p>63% de ganancia anual</p>
+          </div>
+
+          <div class="col-grid  beneficios-ico">
+            <img src="./images/ganancias.png" alt="" class="beneficios-img">
+            <p>Legalidad</p>
+            <p>Revisión de expediente legal</p>
+          </div>
+        </div>
+
+
 
           </section>
 
           <section class="col" id="inversion-confiable">
             <div class="container">
               <div class="text-content-inversion">
-                <H2>INVERSIÓN CONFIABLE Y SEGURA</H2>
+              <H2 class="text-color-yellow mt-4 text-center">INVERSIÓN CONFIABLE Y SEGURA</H2>
                   <ul class="inversion-confiable-ul">
                     <li> <img src="./images/ico.png" alt="" class="ico-list">  Nuestro equipo de expertos certificados manejarán la plantación (prevención de plagas, hierba, cuidados)</li>
                     <li> <img src="./images/ico.png" alt="" class="ico-list"> Seguro agrícola para más tranquilidad (protege ante catastrofe climática)</li>
@@ -74,22 +131,51 @@
           </section>
 
           <section class="col" id="aliados_comerciales" >
+            <div class="container">
+              <h2 class="py-4 text-center">ALIADOS COMERCIALES</h2>
+              <div class="owl-carousel mt-4">
+                <div class="item">
+                 <img src="./images/aliados/multiassets.png" alt="" class="img-aliados"> 
+                </div>
+
+                <div class="item">
+                  <img src="./images/aliados/oro_de_oaxaca.png" alt="" class="img-aliados"> 
+                 </div>
+
+                 <div class="item">
+                  <img src="./images/aliados/mezcalbuzz.png" alt="" class="img-aliados"> 
+                 </div>
+
+                 <div class="item">
+                  <img src="./images/aliados/donagavepng.png" alt="" class="img-aliados"> 
+                 </div>
+
+                 <div class="item">
+                  <img src="./images/aliados/orange.png" alt="" class="img-aliados"> 
+                 </div>
+
+              </div>
+            </div>
     
           </section>
           <footer id="contacto">
-            <div class="container">
               <div class="text-content-form text-color-yellow">
-                <h2 class="text-content-white">INFORMACIÓN DE CONTACTO</h2>
-                <p>Ubicacion: Calzada Porfirio Diaz, oficina 4C, Plaza parque</p>
-                <p>Teléfono: 95123667029</p>
+                <h2 class="text-content-white text-center py-4">INFORMACIÓN DE CONTACTO</h2>
+                <div class="map" id="map">
+
+                </div>
+                <div class="container text-center">
+
+                  <p>Ubicacion: Calzada Porfirio Diaz, oficina 4C, Plaza parque</p>
+                  <a href="tel:800 461 9646" class="tel">Teléfono: 800 461 9646</a>
+                  <p class="py-4 text-color-yellow">MezcalToken- todos los derechos reservados 2021</p>
+                </div>
               </div>
-              <p></p>
-            </div>
           </footer>
       </main>
 
 
-
+<script src="./js/app.js"></script>
     
 </body>
 </html>
