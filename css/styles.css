@@ -1,7 +1,94 @@
+:root{
+    --yellow: #e8b836;
+    --withe: #ffffff;
+}
+
 .nav-logo{
     width: 200px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
+#header{
+    background-image: url("../images/imagenFondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 section{
     height: 100vh;
 }
+
+.content-text{
+    width: 700px;
+    margin: 200px auto;
+    color: var(--withe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text > h1 > span:nth-child(2){
+    display: block;
+    font-size: 18px;
+}
+
+.text-color-yellow{
+    color: var(--yellow);
+}
+
+#inversion-confiable{
+    border: 1px solid;
+}
+
+.container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.inversion-confiable-ul{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    max-width: 50%;
+    height: 100%;
+}
+
+.inversion-confiable-ul > li{
+    text-decoration: none;
+    list-style: none;
+    margin: 4px 0px;
+    color: var(--withe);
+}
+
+.ico-list{
+    width: 20px;
+}
+
+#inversion-confiable{
+    background-image: url("../images/agave.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-content-reacreativa{
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+
+footer{
+    background:black;
+}
+
+
+
