@@ -53,3 +53,45 @@ var map = new ol.Map({
 
 });
 ol.proj.useGeographic();
+
+
+options = {
+  // root:,
+  rootMargin:" 0px 0px 0px 0px ",
+  threshold: 0
+}
+const sectios = document.querySelectorAll(".col")
+
+function callback(entries, observer){
+
+  entries.forEach(element => {
+    if(element.isIntersecting){
+      console.log(element)
+      let tag = document.getElementById(element.target.getAttribute("id"))
+      sectios.forEach(sec => {
+        if(sec == element.target ){
+          sec.style.animation = "fadeIn"
+          sec.style.animationDuration = "5s"
+        }else{
+          sec.style.animation = "fadeOut"
+          // sec.style.animationDuration = "4s" 
+
+        }
+        
+      })
+        
+    }
+  })
+    
+    
+  // });
+
+  console.log()
+  
+
+}
+
+const observer = new IntersectionObserver(callback, options)
+sectios.forEach(elemnt =>  observer.observe(elemnt))
+
+
